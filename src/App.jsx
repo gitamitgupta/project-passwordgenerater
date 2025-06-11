@@ -28,6 +28,7 @@ function App() {
   passwordgenerator();
  },[length,number,char,passwordgenerator]);
  const passwordref=useRef(null);
+ // copy form clipboard
  const copypasswordTOclipbord=useCallback(()=>{
   passwordref.current?.select();
   window.navigator.clipboard.writeText(password);
